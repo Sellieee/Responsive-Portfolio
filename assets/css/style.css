@@ -1,0 +1,319 @@
+header {
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #666666;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url(../images/interlaced.png);
+  overflow: auto;
+}
+
+.logo {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  width: fit-content;
+  display: block;
+  position: relative;
+  left: 18.5%;
+  /*This 18.5% was trial and error again.*/
+}
+
+nav {
+  margin: 0;
+  position: absolute;
+  right: 18.5%;
+  top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+  right: 105%;
+  /*Trial and error to figure out the best position for the right (105%) - is there a better way?*/
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #4aaaa5;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+hr {
+  position: relative;
+  top: -15px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  border: 1.5px solid #666666;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  height: 600px;
+  padding-bottom: 20px;
+}
+
+#form {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  height: 550px;
+}
+
+#contact-form {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+label {
+  list-style-type: none;
+  display: block;
+}
+
+input[type="text"] input[type="email"] {
+  /* Width = 960px - 40px (hr padding) */
+  width: 920px;
+}
+
+input[type="submit"] {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  width: auto;
+  border: none;
+  position: relative;
+  left: 55px;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 150px;
+  overflow: auto;
+  width: 860px;
+}
+
+#prof-image {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+}
+
+.port-pic {
+  float: left;
+  margin: 0 20px;
+}
+
+/*Having trouble putting margin on - so I put it on the html file*/
+#about-me {
+  display: inline;
+  margin: 0px 20px;
+  position: relative;
+  left: 20px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  width: 246px;
+  text-align: center;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+  bottom: 70px;
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  background-color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: #ffffff;
+  font-size: 10px;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  border-top: 8px solid #4aaaa5;
+  height: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    position: relative;
+    right: 140px;
+    width: 1110px;
+  }
+
+  .logo {
+    position: relative;
+    left: 180px;
+  }
+
+  nav {
+    right: 10px;
+  }
+
+  #form {
+    width: 620px;
+    position: relative;
+    right: 140px;
+  }
+
+  textarea {
+    width: 500px;
+  }
+
+  /* Not sure what that extra white bit is at the bottom of the container on 768px */
+  .container {
+    width: 620px;
+    position: relative;
+    right: 140px;
+    height: 950px;
+    padding-bottom: 20px;
+  }
+
+  /* Sticky footer not working */
+  footer {
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 910px;
+  }
+
+  .logo {
+    position: relative;
+    left: 160px;
+  }
+
+  nav {
+    right: 50px;
+  }
+
+  #form {
+    width: 720px;
+    position: relative;
+    right: 0px;
+  }
+
+  textarea {
+    width: 600px;
+  }
+
+  /* I've made the mistake of not separating the containers for the index.html and the portfolio.html so when I adjust the height, both will adjust. Will fix if I have time*/
+  .container {
+    width: 720px;
+    position: relative;
+    right: 0px;
+    height: 900px;
+    padding-bottom: 20px;
+  }
+
+  .port-pic {
+    width: 300px;
+    position: relative;
+    left: 40px;
+  }
+
+  /* Sticky footer not working */
+  footer {
+    height: 20px;
+    position: fixed;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    width: 780px;
+  }
+
+  .logo {
+    width: 600px;
+    text-align: center;
+    left: 140px;
+    display: block;
+  }
+
+  nav {
+    display: block;
+    position: relative;
+    left: 300px;
+    height: 50px;
+  }
+
+  /* Need to move contents of the form more to the left */
+  #form {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 500px;
+  }
+
+  #prof-image {
+    width: 400px;
+    height: 500px;
+    clear: both;
+  }
+
+  p {
+    clear: both;
+  }
+
+  img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 40px;
+  }
+
+  h3 {
+    width: 380px;
+    position: relative;
+    left: 40px;
+  }
+
+  .container {
+    width: 600px;
+    height: 2000px;
+  }
+
+  /* Sticky footer not working */
+  footer {
+    height: 20px;
+    position: fixed;
+    bottom: 0px;
+  }
+}
