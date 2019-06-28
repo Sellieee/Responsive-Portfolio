@@ -60,14 +60,28 @@ hr {
   border: 1.5px solid #666666;
 }
 
+#index-container {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+#port-images {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
 .container {
   background-color: #ffffff;
   width: 960px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
-  height: 600px;
-  padding-bottom: 20px;
 }
 
 #form {
@@ -115,17 +129,19 @@ textarea {
 #prof-image {
   position: relative;
   float: left;
-  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.images-container {
 }
 
 .port-pic {
-  float: left;
+  /* float: left; */
   margin: 0 20px;
 }
 
 /*Having trouble putting margin on - so I put it on the html file*/
 #about-me {
-  display: inline;
   margin: 0px 20px;
   position: relative;
   left: 20px;
@@ -134,6 +150,7 @@ textarea {
   font-size: 20px;
   background-color: #ffffff;
   padding: 20px;
+  margin-right: 30px;
 }
 
 h3 {
@@ -194,7 +211,6 @@ footer {
     width: 620px;
     position: relative;
     right: 140px;
-    height: 950px;
     padding-bottom: 20px;
   }
 
@@ -235,7 +251,6 @@ footer {
     width: 720px;
     position: relative;
     right: 0px;
-    height: 900px;
     padding-bottom: 20px;
   }
 
@@ -288,6 +303,12 @@ footer {
     clear: both;
   }
 
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
   p {
     clear: both;
   }
@@ -305,10 +326,10 @@ footer {
     left: 40px;
   }
 
-  .container {
+  /* .container {
     width: 600px;
     height: 2000px;
-  }
+  } */
 
   /* Sticky footer not working */
   footer {
