@@ -123,7 +123,7 @@ input[type="submit"] {
 textarea {
   height: 150px;
   overflow: auto;
-  width: 860px;
+  width: 850px;
 }
 
 #prof-image {
@@ -132,11 +132,14 @@ textarea {
   margin-right: 20px;
 }
 
-.images-container {
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .port-pic {
-  /* float: left; */
+  float: left;
   margin: 0 20px;
 }
 
@@ -157,7 +160,7 @@ h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #ffffff;
   background-color: #4aaaa5;
-  width: 246px;
+  width: 273px;
   text-align: center;
   overflow: auto;
   padding: 10px;
@@ -193,7 +196,7 @@ footer {
   }
 
   nav {
-    right: 10px;
+    right: 20px;
   }
 
   #form {
@@ -206,15 +209,26 @@ footer {
     width: 500px;
   }
 
-  /* Not sure what that extra white bit is at the bottom of the container on 768px */
-  .container {
+  #index-container {
     width: 620px;
     position: relative;
     right: 140px;
     padding-bottom: 20px;
   }
 
-  /* Sticky footer not working */
+  #port-images {
+    width: 650px;
+    position: relative;
+    right: 140px;
+    padding-bottom: 20px;
+  }
+
+  .port-pic {
+    width: 200px;
+    padding-right: 80px;
+  }
+
+  /* Sticky footer not working on Index and portfolio*/
   footer {
     position: fixed;
     bottom: 0px;
@@ -233,7 +247,7 @@ footer {
   }
 
   nav {
-    right: 50px;
+    right: 20px;
   }
 
   #form {
@@ -246,8 +260,21 @@ footer {
     width: 600px;
   }
 
-  /* I've made the mistake of not separating the containers for the index.html and the portfolio.html so when I adjust the height, both will adjust. Will fix if I have time*/
+  #index-container {
+    width: 720px;
+    position: relative;
+    right: 7px;
+    padding-bottom: 20px;
+  }
+
   .container {
+    width: 720px;
+    position: relative;
+    right: 70px;
+    padding-bottom: 20px;
+  }
+
+  #port-images {
     width: 720px;
     position: relative;
     right: 0px;
@@ -255,12 +282,12 @@ footer {
   }
 
   .port-pic {
-    width: 300px;
+    width: 200px;
     position: relative;
     left: 40px;
   }
 
-  /* Sticky footer not working */
+  /* Sticky footer not working on portfolio*/
   footer {
     height: 20px;
     position: fixed;
@@ -298,19 +325,22 @@ footer {
   }
 
   #prof-image {
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 250px;
     clear: both;
-  }
-
-  .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+    position: relative;
+    left: 0px;
+    margin-right: 15px;
   }
 
   p {
     clear: both;
+  }
+
+  #about-me {
+    position: relative;
+    left: -10px;
+    margin-right: 10px;
   }
 
   img {
@@ -326,12 +356,36 @@ footer {
     left: 40px;
   }
 
-  /* .container {
-    width: 600px;
-    height: 2000px;
-  } */
+  #index-container {
+    width: 590px;
+  }
 
-  /* Sticky footer not working */
+  #form {
+    padding-bottom: 20px;
+  }
+
+  #contact-form {
+    padding-bottom: 20px;
+  }
+
+  #port-images {
+    width: 600px;
+  }
+
+  .port-pic {
+    position: relative;
+    left: 30px;
+  }
+
+  .container {
+    width: 400px;
+  }
+
+  textarea {
+    width: 490px;
+  }
+
+  /* Sticky footer not working on all three pages*/
   footer {
     height: 20px;
     position: fixed;
